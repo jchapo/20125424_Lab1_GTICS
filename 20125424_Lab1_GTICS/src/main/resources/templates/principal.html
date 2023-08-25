@@ -11,7 +11,7 @@
 <header>
     <div class="navbar-container">
         <nav class="navbar bg-black">
-            <img th:src="@{/images/logo.png}" alt="logo">
+            <img th:if="${pucp!=null}" th:src="@{/images/logo.png}" alt="logo">
             <div class="nav-search">
                 <form>
                     <input aria-label="buscar" type="text" placeholder="Encuentra tus vuelos preferidos">
